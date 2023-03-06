@@ -251,6 +251,8 @@ section {
   position: absolute;
   width: 100%;
   height: 100%;
+  top: 0;
+  left: 0;
 }
 
 .filosofy__container {
@@ -537,11 +539,14 @@ section {
   position: absolute;
   width: 100%;
   height: 100%;
+  top: 0;
+  left: 0;
 }
 
 .order__border {
   position: absolute;
   bottom: 0;
+  left: 0;
   height: 3.125rem;
   width: 100%;
 }
@@ -592,6 +597,7 @@ section {
 
 .order__grass {
   position: absolute;
+  left: 0;
   bottom: 3.125rem;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -627,7 +633,6 @@ section {
 }
 
 .order__magazine {
-  position: relative;
   position: absolute;
   bottom: 3.125rem;
 }
