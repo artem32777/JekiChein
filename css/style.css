@@ -316,8 +316,8 @@ section {
   left: -6.25rem;
   top: 28.125rem;
   width: 5.625rem;
-  -webkit-animation: arrow 2s ease-in-out infinite;
-          animation: arrow 2s ease-in-out infinite;
+  -webkit-animation: arrow 1.5s linear infinite;
+          animation: arrow 1.5s linear infinite;
 }
 
 .filosofy__image-arrow2 {
@@ -533,6 +533,9 @@ section {
 .order {
   position: relative;
   height: 100vh;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
 }
 
 .order__background {
@@ -566,6 +569,9 @@ section {
 
 .order__title {
   text-align: center;
+  -ms-flex-item-align: start;
+      -ms-grid-row-align: start;
+      align-self: start;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -577,8 +583,6 @@ section {
       -ms-flex-align: center;
           align-items: center;
   max-width: 31.25rem;
-  margin: auto;
-  padding-top: 1.875rem;
 }
 
 .order__title-label {

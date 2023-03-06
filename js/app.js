@@ -3145,11 +3145,19 @@
             }));
         }
     }), 0);
-    const imageElement = document.querySelector(".filosofy__image-arrow2");
-    function toggleImage() {
-        if ("none" === imageElement.style.display) imageElement.style.display = "block"; else imageElement.style.display = "none";
-    }
-    setInterval(toggleImage, 1050);
+    const script_image = document.querySelector(".filosofy__image-arrow2");
+    setTimeout((() => {
+        script_image.style.display = "block";
+        setTimeout((() => {
+            script_image.style.display = "none";
+            setInterval((() => {
+                script_image.style.display = "block";
+                setTimeout((() => {
+                    script_image.style.display = "none";
+                }), 10);
+            }), 1500);
+        }), 5);
+    }), 750);
     window["FLS"] = false;
     isWebp();
     pageNavigation();
