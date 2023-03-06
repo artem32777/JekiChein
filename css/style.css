@@ -142,6 +142,19 @@ h6 {
   text-transform: uppercase;
 }
 
+section {
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
 .header {
   z-index: 10;
 }
@@ -348,10 +361,19 @@ h6 {
 }
 
 .menu {
-  height: 100vh;
   text-transform: uppercase;
   text-align: center;
   margin-bottom: 3.125rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 100vh;
 }
 
 .menu__title {
@@ -428,7 +450,6 @@ h6 {
 .case {
   margin-bottom: 3.125rem;
   padding-top: 1.25rem;
-  height: 100vh;
 }
 
 .case__container {
@@ -607,6 +628,8 @@ h6 {
 
 .order__magazine {
   position: relative;
+  position: absolute;
+  bottom: 3.125rem;
 }
 
 .no-webp .order__magazine::after {
