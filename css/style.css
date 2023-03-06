@@ -1,7 +1,7 @@
 @font-face {
-  font-family: Arcade;
+  font-family: Press;
   font-display: swap;
-  src: url("../fonts/Arcade.woff2") format("woff2"), url("../fonts/Arcade.woff") format("woff");
+  src: url("../fonts/Press.woff2") format("woff2"), url("../fonts/Press.woff") format("woff");
   font-weight: 400;
   font-style: normal;
 }
@@ -41,7 +41,7 @@ body {
 body {
   color: #ff63d8;
   line-height: 1;
-  font-family: "Arcade";
+  font-family: "Press";
   font-size: 0.875rem;
   caret-color: transparent;
   -ms-text-size-adjust: 100%;
@@ -54,7 +54,7 @@ body {
 input,
 button,
 textarea {
-  font-family: "Arcade";
+  font-family: "Press";
   font-size: inherit;
 }
 
@@ -135,11 +135,15 @@ h6 {
 }
 
 .b {
-  font-size: 1.875rem;
+  font-size: 1.25rem;
   border-radius: 1.875rem;
   border: 3px solid #ff63d8;
   padding: 1.875rem;
   text-transform: uppercase;
+}
+
+.header {
+  z-index: 10;
 }
 
 .header__container {
@@ -155,6 +159,11 @@ h6 {
   gap: 1.25rem;
 }
 
+.header__menu img {
+  height: 3.75rem;
+  width: 27.5rem;
+}
+
 .header__actions {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -163,6 +172,7 @@ h6 {
       -ms-flex-align: center;
           align-items: center;
   gap: 1.25rem;
+  padding-right: 5rem;
 }
 
 .main {
@@ -177,7 +187,15 @@ h6 {
       -ms-flex-align: center;
           align-items: center;
   gap: 1.25rem;
+  margin-top: -2.8125rem;
   margin-bottom: 3.125rem;
+  min-height: 100vh;
+}
+
+.main__image {
+  width: 23.75rem;
+  height: 17.5rem;
+  margin-bottom: 1.25rem;
 }
 
 .main__title-wrapper {
@@ -187,24 +205,28 @@ h6 {
   text-align: center;
 }
 
+.main__title-label {
+  font-size: 1.25rem;
+  margin-bottom: 1.875rem;
+}
+
 .main__title-text {
-  font-size: 6.25rem;
+  font-size: 7.5rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  gap: 3.75rem;
+  line-height: 1.2;
 }
 
 .main__title-text::before,
 .main__title-text::after {
   -webkit-box-flex: 0;
-      -ms-flex: 0 0 7.5rem;
-          flex: 0 0 7.5rem;
-  height: 7.5rem;
+      -ms-flex: 0 0 15.625rem;
+          flex: 0 0 15.625rem;
+  height: 15.625rem;
   content: "";
-  background: url("../img/str1/gif-money.gif") center/100% no-repeat;
+  background: url("../img/str1/gif-money.gif") center 5px/100% no-repeat;
 }
 
 .filosofy {
@@ -234,19 +256,19 @@ h6 {
       align-self: start;
   padding: 1.25rem 0.625rem;
   border-radius: 1.25rem;
-  background-color: #1E1E1E;
+  background-color: #000;
   position: relative;
   color: #fff;
 }
 
 .filosofy__title {
   text-align: center;
-  font-size: 1.875rem;
+  font-size: 1.5625rem;
   margin-bottom: 1.25rem;
 }
 
 .filosofy__text {
-  font-size: 1.25rem;
+  font-size: 1rem;
   max-height: 33.75rem;
   overflow: auto;
 }
@@ -268,8 +290,8 @@ h6 {
 
 .filosofy__image-start {
   position: absolute;
-  top: 25%;
-  left: 35%;
+  top: 28%;
+  left: 40%;
   cursor: pointer;
 }
 
@@ -284,14 +306,12 @@ h6 {
 
 .filosofy__image-arrow2 {
   position: absolute;
-  left: -6.25rem;
-  top: 28.125rem;
+  left: 0;
+  top: 24.375rem;
   width: 5.625rem;
-  -webkit-animation: arrow2 2s ease-in-out infinite;
-          animation: arrow2 2s ease-in-out infinite;
-  -webkit-transform: translate(100px, -60px);
-      -ms-transform: translate(100px, -60px);
-          transform: translate(100px, -60px);
+  -webkit-animation: arrow2 2s ease infinite 2s;
+          animation: arrow2 2s ease infinite 2s;
+  opacity: 0;
 }
 
 @-webkit-keyframes arrow {
@@ -329,21 +349,21 @@ h6 {
 }
 
 @-webkit-keyframes arrow2 {
-  0% {
+  to {
     opacity: 0;
   }
 
-  50% {
+  from {
     opacity: 1;
   }
 }
 
 @keyframes arrow2 {
-  0% {
+  to {
     opacity: 0;
   }
 
-  50% {
+  from {
     opacity: 1;
   }
 }
@@ -362,7 +382,7 @@ h6 {
   border-radius: 1.25rem;
   border: 3px solid #ff63d8;
   margin-bottom: 3.125rem;
-  font-size: 3.125rem;
+  font-size: 2.5rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -390,7 +410,10 @@ h6 {
   grid-auto-rows: 1fr;
   -ms-grid-columns: (1fr)[3];
   grid-template-columns: repeat(3, 1fr);
-  gap: 4.375rem;
+  -webkit-column-gap: 6.25rem;
+     -moz-column-gap: 6.25rem;
+          column-gap: 6.25rem;
+  row-gap: 3.125rem;
 }
 
 .menu__item {
@@ -398,6 +421,20 @@ h6 {
   -webkit-transition: background-color 0.3s ease 0s;
   -o-transition: background-color 0.3s ease 0s;
   transition: background-color 0.3s ease 0s;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  line-height: 1.5;
+}
+
+.menu__item span {
+  display: inline-block;
 }
 
 .menu__item span {
