@@ -203,6 +203,7 @@ h6 {
   display: grid;
   text-transform: uppercase;
   text-align: center;
+  height: 100vh;
 }
 
 .main__title-label {
@@ -211,11 +212,10 @@ h6 {
 }
 
 .main__title-text {
-  font-size: 7.5rem;
+  font-size: 10em;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  gap: 3.75rem;
   line-height: 1.2;
 }
 
@@ -226,7 +226,7 @@ h6 {
           flex: 0 0 15.625rem;
   height: 15.625rem;
   content: "";
-  background: url("../img/str1/gif-money.gif") center 5px/100% no-repeat;
+  background: url("../img/str1/gif-money.gif") center -10px/100% no-repeat;
 }
 
 .filosofy {
@@ -310,9 +310,7 @@ h6 {
   left: 0;
   top: 24.375rem;
   width: 5.625rem;
-  -webkit-animation: arrow2 2s ease infinite 2s;
-          animation: arrow2 2s ease infinite 2s;
-  opacity: 0;
+  display: none;
 }
 
 @-webkit-keyframes arrow {
@@ -346,26 +344,6 @@ h6 {
   100% {
     -webkit-transform: translate(0px, 0px);
             transform: translate(0px, 0px);
-  }
-}
-
-@-webkit-keyframes arrow2 {
-  to {
-    opacity: 0;
-  }
-
-  from {
-    opacity: 1;
-  }
-}
-
-@keyframes arrow2 {
-  to {
-    opacity: 0;
-  }
-
-  from {
-    opacity: 1;
   }
 }
 

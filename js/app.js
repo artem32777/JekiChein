@@ -3145,6 +3145,11 @@
             }));
         }
     }), 0);
+    const imageElement = document.querySelector(".filosofy__image-arrow2");
+    function toggleImage() {
+        if ("none" === imageElement.style.display) imageElement.style.display = "block"; else imageElement.style.display = "none";
+    }
+    setInterval(toggleImage, 1050);
     window["FLS"] = false;
     isWebp();
     pageNavigation();
