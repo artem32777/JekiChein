@@ -3156,7 +3156,7 @@
                     script_image.style.display = "none";
                 }), 10);
             }), 1500);
-        }), 5);
+        }), 10);
     }), 750);
     window["FLS"] = false;
     isWebp();

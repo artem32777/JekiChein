@@ -6,7 +6,7 @@
 	<meta charset="UTF-8">
 	<meta name="format-detection" content="telephone=no">
 	<!-- <style>body{opacity: 0;}</style> -->
-	<link rel="stylesheet" href="css/style.min.css?_v=20230306235930">
+	<link rel="stylesheet" href="css/style.min.css?_v=20230307151444">
 	<link rel="shortcut icon" href="img/favicon.svg">
 	<!-- <meta name="robots" content="noindex, nofollow"> -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -63,23 +63,23 @@
 					<h2 class="menu__title">
 						<picture><source srcset="img/str3/menu.webp" type="image/webp"><img src="img/str3/menu.png" alt="Меню"></picture>
 					</h2>
-					<div class="menu__suriken">КИНУТЬ СЮРИКЕН ЗАКАЗА</div>
+					<div data-goto=".contacts" class="menu__suriken">КИНУТЬ СЮРИКЕН ЗАКАЗА</div>
 					<ul class="menu__list">
 						<li data-goto=".case" class="menu__item b">
 							<div>Джеки - <span>Кейсы</div></span>
 						<li data-goto=".order" class="menu__item b">
-							<div><span>Магазинчик</span>Джеки чейна</div>
+							<div><span>Магазинчик</span><br> Джеки чейна</div>
 						</li>
-						<li class="menu__item b">
+						<li data-goto=".about" class="menu__item b">
 							<div>О джеки <span>Пишут</span></div>
 						</li>
-						<li class="menu__item b">
+						<li data-goto=".memes" class="menu__item b">
 							<div>Джеки - <span>Мемы</span></div>
 						</li>
-						<li class="menu__item b">
-							<div><span>Философия</span>Джеки</div>
+						<li data-goto=".filosofy" class="menu__item b">
+							<div><span>Философия</span><br>Джеки</div>
 						</li>
-						<li class="menu__item menu__item_nft b">Выиграй nft!</li>
+						<li data-goto=".game" class="menu__item menu__item_nft b">Выиграй nft!</li>
 					</ul>
 				</div>
 			</section>
@@ -94,45 +94,27 @@
 						<div class="case__slider swiper">
 							<div class="case__wrapper swiper-wrapper">
 								<div class="case__slide swiper-slide">
-									<a href="#" class="case__slide-content">
+									<a href="https://kefirium.ru/collection/940" class="case__slide-content">
 										<div class="case__image"><picture><source srcset="img/str4/1.webp" type="image/webp"><img src="img/str4/1.png" alt="Изображение слайда"></picture></div>
 										<h3 class="case__slide-title b">Бродский</h3>
 									</a>
 								</div>
 								<div class="case__slide swiper-slide">
-									<a href="#" class="case__slide-content">
-										<div class="case__image"><picture><source srcset="img/str4/2.webp" type="image/webp"><img src="img/str4/2.png" alt="Изображение слайда"></picture></div>
-										<h3 class="case__slide-title b">Тедди</h3>
+									<a href="https://kefirium.ru/collection/361" class="case__slide-content">
+										<div class="case__image"><picture><source srcset="img/str4/4.webp" type="image/webp"><img src="img/str4/4.jpg" alt="Изображение слайда"></picture></div>
+										<h3 class="case__slide-title b">МИЛЛИОНПРОСМОТРОВ</h3>
 									</a>
 								</div>
 								<div class="case__slide swiper-slide">
-									<a href="#" class="case__slide-content">
+									<a href="https://kefirium.ru/collection/718" class="case__slide-content">
 										<div class="case__image"><picture><source srcset="img/str4/3.webp" type="image/webp"><img src="img/str4/3.png" alt="Изображение слайда"></picture></div>
 										<h3 class="case__slide-title b">ночлежка</h3>
 									</a>
-								</div>
-								<div class="case__slide swiper-slide">
-									<a href="#" class="case__slide-content">
-										<div class="case__image"><picture><source srcset="img/str4/1.webp" type="image/webp"><img src="img/str4/1.png" alt="Изображение слайда"></picture></div>
-										<h3 class="case__slide-title b">Бродский</h3>
-									</a>
-								</div>
-								<div class="case__slide swiper-slide">
-									<a href="#" class="case__slide-content">
-										<div class="case__image"><picture><source srcset="img/str4/2.webp" type="image/webp"><img src="img/str4/2.png" alt="Изображение слайда"></picture></div>
-										<h3 class="case__slide-title b">Тедди</h3>
-									</a>
-								</div>
-								<div class="case__slide swiper-slide">
-									<a href="#" class="case__slide-content">
-										<div class="case__image"><picture><source srcset="img/str4/3.webp" type="image/webp"><img src="img/str4/3.png" alt="Изображение слайда"></picture></div>
-										<h3 class="case__slide-title b">ночлежка</h3>
-									</a>
+
 								</div>
 							</div>
 						</div>
 					</div>
-				</div>
 			</section>
 			<section class="page__order order">
 				<picture><source srcset="img/str5/bg.webp" type="image/webp"><img src="img/str5/bg.png" class="order__background" alt="Фон" img></picture>
@@ -147,12 +129,130 @@
 						<span class="order__title-text">ЖМИ НА МАГАЗИНЧИК</span>
 						<picture><source srcset="img/str5/button.webp" type="image/webp"><img src="img/str5/button.png" class="order__button" alt="Кнопка" img></picture>
 					</h2>
-					<div class="order__magazine"><picture><source srcset="img/str5/magazine.webp" type="image/webp"><img src="img/str5/magazine.png" alt="Магазинчик"></picture></div>
+					<div data-goto=".services" class="order__magazine"><picture><source srcset="img/str5/magazine.webp" type="image/webp"><img src="img/str5/magazine.png" alt="Магазинчик"></picture></div>
 					<div class="order__weapons"></div>
 					<div class="order__boxes"></div>
 					<div class="order__boxes2"></div>
 					<div class="order__stars"></div>
 				</div>
+			</section>
+			<section class="page__services services">
+				<h2 hidden>Услуги</h2>
+				<picture><source srcset="img/str5/bg.webp" type="image/webp"><img src="img/str5/bg.png" class="services__background" alt="Фон" img></picture>
+				<picture><source srcset="img/str5/border.webp" type="image/webp"><img src="img/str5/border.png" class="services__border" alt="Изображение" img></picture>
+				<picture><source srcset="img/str5/magazine.webp" type="image/webp"><img src="img/str5/magazine.png" class="services__magazine" alt="Магазинчик"></picture>
+				<picture><source srcset="img/str5/grass.webp" type="image/webp"><img src="img/str5/grass.png" class="services__grass" alt="Трава"></picture>
+				<picture><source srcset="img/str5/fire.webp" type="image/webp"><img src="img/str5/fire.png" class="services__fire" alt="Трава"></picture>
+				<div class="services__container">
+					<ul class="services__list">
+						<li class="services__item">ИЗГОТОВЛЕНИЕ КОЛЛЕКЦИЙ</li>
+						<li class="services__item">МИНТИНГ</li>
+						<li class="services__item">ОФИГЕННЫЙ ДИЗАЙН</li>
+						<li class="services__item">ЛИХОЕ ПРОДВИЖЕНИЕ</li>
+						<li class="services__item">РАЗРАБОТКА "ROAD MAP"</li>
+						<li class="services__item">УБОЙНЫЙ КРЕАТИВ</li>
+						<li class="services__item">КОЛЛАБЫ С СЕЛЕБАМИ</li>
+						<li class="services__item">ЛЮБАЯ ДИЧЬ</li>
+					</ul>
+				</div>
+			</section>
+			<section class="page__about about">
+				<div class="about__container">
+					<h2 class="about__title b">О нас пишут</h2>
+					<div class="about__content">
+						<div class="about__image"><picture><source srcset="img/str7/comp.webp" type="image/webp"><img src="img/str7/comp.png" alt="Компьютер"></picture></div>
+						<ul class="about__list">
+							<li class="about__item">
+								<a href="#">В Форбс</a>
+							</li>
+							<li class="about__item">
+								<a href="#">В таймаут</a>
+							</li>
+							<li class="about__item">
+								<a href="#">В собаке</a>
+							</li>
+							<li class="about__item">
+								<a href="#">В собаке</a>
+							</li>
+							<li class="about__item">
+								<a href="#">В собаке</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</section>
+			<section class="page__memes memes">
+				<div class="memes__container">
+					<h2 class="memes__title b">Джеки - Мемы</h2>
+					<ul class="memes__list">
+						<li class="memes__item">
+							<picture><source srcset="img/memes/1.webp" type="image/webp"><img src="img/memes/1.png" alt="Мем"></picture>
+						</li>
+						<li class="memes__item">
+							<picture><source srcset="img/memes/2.webp" type="image/webp"><img src="img/memes/2.png" alt="Мем"></picture>
+						</li>
+						<li class="memes__item">
+							<picture><source srcset="img/memes/3.webp" type="image/webp"><img src="img/memes/3.png" alt="Мем"></picture>
+						</li>
+						<li class="memes__item">
+							<picture><source srcset="img/memes/4.webp" type="image/webp"><img src="img/memes/4.png" alt="Мем"></picture>
+						</li>
+						<li class="memes__item">
+							<picture><source srcset="img/memes/5.webp" type="image/webp"><img src="img/memes/5.png" alt="Мем"></picture>
+						</li>
+						<li class="memes__item">
+							<picture><source srcset="img/memes/6.webp" type="image/webp"><img src="img/memes/6.png" alt="Мем"></picture>
+						</li>
+						<li class="memes__item">
+							<picture><source srcset="img/memes/1.webp" type="image/webp"><img src="img/memes/1.png" alt="Мем"></picture>
+						</li>
+						<li class="memes__item">
+							<picture><source srcset="img/memes/7.webp" type="image/webp"><img src="img/memes/7.png" alt="Мем"></picture>
+						</li>
+					</ul>
+				</div>
+			</section>
+			<section class="page__game game">
+				<div class="game__container">
+					<h2 class="game__title b">Выиграй NFT !</h2>
+					<div class="game__game-wrapper"></div>
+					<button type="button" class="game__button" title="Старт">
+						<picture><source srcset="img/str2/start.webp" type="image/webp"><img src="img/str2/start.png" alt="Старт"></picture>
+					</button>
+				</div>
+			</section>
+			<section class="page__contacts contacts">
+				<div class="contacts__container">
+					<div class="contacts__content">
+						<h2 class="contacts__title">Контакты</h2>
+						<p class="contacts__label">Пишите джекки по адресу:</p>
+						<ul class="contacts__list">
+							<li class="contacts__item">
+								<a href="email:jackie-chain@mail.ru">JACKIE-CHAIN@MAIL.RU</a>
+							</li>
+							<li class="contacts__item">
+								<span>WHATSAPP</span>
+								<a href="#">+79067357126</a>
+							</li>
+							<li class="contacts__item">
+								<span>ТЕЛЕГРАМ</span>
+								<a href="#">@JACKIECHAIN</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<picture><source srcset="img/str8/car.webp" type="image/webp"><img src="img/str8/car.png" class="contacts__car" alt="Машина"></picture>
+				<picture><source srcset="img/str8/bus.webp" type="image/webp"><img src="img/str8/bus.png" class="contacts__bus" alt="Остановка"></picture>
+				<picture><source srcset="img/str8/sit.webp" type="image/webp"><img src="img/str8/sit.png" class="contacts__sit" alt="Скамейка"></picture>
+				<picture><source srcset="img/str8/sky.webp" type="image/webp"><img src="img/str8/sky.png" class="contacts__sky" alt="Облака"></picture>
+				<picture><source srcset="img/str8/sky.webp" type="image/webp"><img src="img/str8/sky.png" class="contacts__sky2" alt="Облака"></picture>
+				<picture><source srcset="img/str5/grass.webp" type="image/webp"><img src="img/str5/grass.png" class="contacts__grass" alt="Трава"></picture>
+				<picture><source srcset="img/str5/grass.webp" type="image/webp"><img src="img/str5/grass.png" class="contacts__grass2" alt="Трава"></picture>
+				<picture><source srcset="img/str8/vishka.webp" type="image/webp"><img src="img/str8/vishka.png" class="contacts__vishka" alt="Вышка"></picture>
+				<picture><source srcset="img/str8/vishka.webp" type="image/webp"><img src="img/str8/vishka.png" class="contacts__vishka" alt="Вышка"></picture>
+				<picture><source srcset="img/str2/bg2.webp" type="image/webp"><img src="img/str2/bg2.png" class="contacts__bg" alt="Фон"></picture>
+				<picture><source srcset="img/str5/border.webp" type="image/webp"><img src="img/str5/border.png" class="contacts__border" alt="Ограда"></picture>
+				<img src="img/str8/heart.gif" class="contacts__heart" alt="ХП">
 			</section>
 		</main>
 		<footer class="footer">
@@ -160,7 +260,7 @@
 			</div>
 		</footer>
 	</div>
-	<script src="js/app.min.js?_v=20230306235930"></script>
+	<script src="js/app.min.js?_v=20230307151444"></script>
 </body>
 
 </html>
