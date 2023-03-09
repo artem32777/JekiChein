@@ -3171,19 +3171,6 @@
             }));
         }
     }), 0);
-    const script_image = document.querySelector(".filosofy__image-arrow2");
-    setTimeout((() => {
-        script_image.style.display = "block";
-        setTimeout((() => {
-            script_image.style.display = "none";
-            setInterval((() => {
-                script_image.style.display = "block";
-                setTimeout((() => {
-                    script_image.style.display = "none";
-                }), 10);
-            }), 1500);
-        }), 10);
-    }), 750);
     window["FLS"] = false;
     isWebp();
     pageNavigation();

@@ -6,7 +6,7 @@
 	<meta charset="UTF-8">
 	<meta name="format-detection" content="telephone=no">
 	<!-- <style>body{opacity: 0;}</style> -->
-	<link rel="stylesheet" href="css/style.min.css?_v=20230307231132">
+	<link rel="stylesheet" href="css/style.min.css?_v=20230309214506">
 	<link rel="shortcut icon" href="img/favicon.svg">
 	<!-- <meta name="robots" content="noindex, nofollow"> -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -18,7 +18,7 @@
 	<div class="wrapper">
 		<header data-scroll="60" data-scroll-show="2000" class="header">
 			<nav class="header__container">
-				<a href="#" data-goto=".menu" class="header__menu"><picture><source srcset="img/str1/menu2.webp" type="image/webp"><img src="img/str1/menu2.png" alt="Меню"></picture></a>
+				<a href="#" data-goto=".menu" data-goto-top="25" class="header__menu"><picture><source srcset="img/str1/menu2.webp" type="image/webp"><img src="img/str1/menu2.png" alt="Меню"></picture></a>
 				<div class="header__actions">
 					<div class="header__hearts"><picture><source srcset="img/str1/hearts.webp" type="image/webp"><img width="180" height="31" src="img/str1/hearts.png" alt="Сердечки"></picture></div>
 					<div class="header__battery"><img width="70" height="31" src="img/str1/gif-batary.gif" alt="Батарейка"></div>
@@ -27,11 +27,15 @@
 		</header>
 		<main class="page">
 			<section class="page__main main">
-				<picture><source srcset="img/str1/logo.webp" type="image/webp"><img class="main__image" src="img/str1/logo.png" alt="Логотип"></picture>
-				<h1 class="main__title-wrapper">
-					<span class="main__title-label">nft - агенство</span>
-					<span class="main__title-text">джеки чейн</span>
-				</h1>
+				<div class="main__container">
+					<div class="main__image"><picture><source srcset="img/str1/logo.webp" type="image/webp"><img src="img/str1/logo.png" alt="Логотип"></picture></div>
+					<p class="main__title-label">nft - агенство</p>
+					<h1 class="main__title-wrapper">
+						<img src="img/str1/gif-money.gif" class="main__title-money main__title-money_left" alt="Монетка">
+						<span class="main__title-text">джеки чейн</span>
+						<img src="img/str1/gif-money.gif" class="main__title-money main__title-money_right" alt="Монетка">
+					</h1>
+				</div>
 			</section>
 			<section class="page__filosofy filosofy">
 				<picture><source srcset="img/str2/bg2.webp" type="image/webp"><img src="img/str2/bg2.png" class="filosofy__background" alt="Фон"></picture>
@@ -53,8 +57,7 @@
 					<div class="filosofy__images">
 						<picture><source srcset="img/str2/tablo3.webp" type="image/webp"><img class="filosofy__image-tablo" src="img/str2/tablo3.png" alt="Табло"></picture>
 						<picture><source srcset="img/str2/start.webp" type="image/webp"><img class="filosofy__image-start" src="img/str2/start.png" alt="Старт"></picture>
-						<picture><source srcset="img/str2/arrow1.webp" type="image/webp"><img class="filosofy__image-arrow1" src="img/str2/arrow1.png" alt="Стрелка"></picture>
-						<picture><source srcset="img/str2/arrow2.webp" type="image/webp"><img class="filosofy__image-arrow2" src="img/str2/arrow2.png" alt="Стрелка"></picture>
+						<img class="filosofy__arrow" src="img/str2/gif6.gif" alt="Стрелка">
 					</div>
 				</div>
 			</section>
@@ -70,16 +73,16 @@
 						<li data-goto=".order" class="menu__item b">
 							<div><span>Магазинчик</span><br> Джеки чейна</div>
 						</li>
-						<li data-goto=".about" class="menu__item b">
+						<li data-goto=".about" data-goto-top="15" class="menu__item b">
 							<div>О джеки <span>Пишут</span></div>
 						</li>
-						<li data-goto=".memes" class="menu__item b">
+						<li data-goto=".memes" data-goto-top="20" class="menu__item b">
 							<div>Джеки - <span>Мемы</span></div>
 						</li>
-						<li data-goto=".filosofy" class="menu__item b">
+						<li data-goto=".filosofy" data-goto-top="40" class="menu__item b">
 							<div><span>Философия</span><br>Джеки</div>
 						</li>
-						<li data-goto=".game" class="menu__item menu__item_nft b">Выиграй nft!</li>
+						<li data-goto=".game" data-goto-top="30" class="menu__item menu__item_nft b">Выиграй nft!</li>
 					</ul>
 				</div>
 			</section>
@@ -137,30 +140,29 @@
 			<section class="page__order order">
 				<picture><source srcset="img/str5/bg.webp" type="image/webp"><img src="img/str5/bg.png" class="order__background" alt="Фон" img></picture>
 				<picture><source srcset="img/str5/border.webp" type="image/webp"><img src="img/str5/border.png" class="order__border" alt="Изображение" img></picture>
-				<div class="order__grass">
-					<div class="order__grass-left"></div>
-					<div class="order__grass-right"></div>
-				</div>
 				<div class="order__container">
-					<h2 class="order__title">
-						<span class="order__title-label">ЧТО МОЖНО ЗАКАЗАТЬ?</span>
-						<span class="order__title-text">ЖМИ НА МАГАЗИНЧИК</span>
+					<div class="order__content">
+						<h2 class="order__title-label">ЧТО МОЖНО ЗАКАЗАТЬ?</h2>
+						<span class="order__title-text">ЖМИ НА <br> МАГАЗИНЧИК</span>
 						<picture><source srcset="img/str5/button.webp" type="image/webp"><img src="img/str5/button.png" class="order__button" alt="Кнопка" img></picture>
-					</h2>
-					<div data-goto=".services" class="order__magazine"><picture><source srcset="img/str5/magazine.webp" type="image/webp"><img src="img/str5/magazine.png" alt="Магазинчик"></picture></div>
-					<div class="order__weapons"></div>
-					<div class="order__boxes"></div>
-					<div class="order__boxes2"></div>
-					<div class="order__stars"></div>
+						<div data-goto=".services" class="order__magazine">
+							<picture><source srcset="img/str5/magazine.webp" type="image/webp"><img src="img/str5/magazine.png" alt="Магазинчик"></picture>
+						</div>
+						<div class="order__weapons"></div>
+						<div class="order__boxes"></div>
+						<div class="order__boxes2"></div>
+						<div class="order__stars"></div>
+					</div>
+					<div class="order__grass">
+						<div class="order__grass-left"></div>
+						<div class="order__grass-right"></div>
+					</div>
 				</div>
 			</section>
 			<section class="page__services services">
 				<h2 hidden>Услуги</h2>
 				<picture><source srcset="img/str5/bg.webp" type="image/webp"><img src="img/str5/bg.png" class="services__background" alt="Фон" img></picture>
 				<picture><source srcset="img/str5/border.webp" type="image/webp"><img src="img/str5/border.png" class="services__border" alt="Изображение" img></picture>
-				<picture><source srcset="img/str5/magazine.webp" type="image/webp"><img src="img/str5/magazine.png" class="services__magazine" alt="Магазинчик"></picture>
-				<picture><source srcset="img/str5/grass.webp" type="image/webp"><img src="img/str5/grass.png" class="services__grass" alt="Трава"></picture>
-				<picture><source srcset="img/str5/fire.webp" type="image/webp"><img src="img/str5/fire.png" class="services__fire" alt="Трава"></picture>
 				<div class="services__container">
 					<ul class="services__list">
 						<li class="services__item">ИЗГОТОВЛЕНИЕ КОЛЛЕКЦИЙ</li>
@@ -172,13 +174,16 @@
 						<li class="services__item">КОЛЛАБЫ С СЕЛЕБАМИ</li>
 						<li class="services__item">ЛЮБАЯ ДИЧЬ</li>
 					</ul>
+					<picture><source srcset="img/str5/magazine.webp" type="image/webp"><img src="img/str5/magazine.png" class="services__magazine" alt="Магазинчик"></picture>
+					<picture><source srcset="img/str5/grass.webp" type="image/webp"><img src="img/str5/grass.png" class="services__grass" alt="Трава"></picture>
+					<picture><source srcset="img/str5/fire.webp" type="image/webp"><img src="img/str5/fire.png" class="services__fire" alt="Трава"></picture>
 				</div>
 			</section>
 			<section class="page__about about">
 				<div class="about__container">
+					<div class="about__image"><picture><source srcset="img/str7/comp.webp" type="image/webp"><img src="img/str7/comp.png" alt="Компьютер"></picture></div>
 					<h2 class="about__title b">О нас пишут</h2>
 					<div class="about__content">
-						<div class="about__image"><picture><source srcset="img/str7/comp.webp" type="image/webp"><img src="img/str7/comp.png" alt="Компьютер"></picture></div>
 						<ul class="about__list">
 							<li class="about__item">
 								<a href="https://www.forbes.ru/forbeslife/484491-reabilitacia-detej-s-sma-i-akcia-privycka-pomogat-social-nye-proekty-nedeli" target="blank">В Форбс</a>
@@ -222,7 +227,7 @@
 							<picture><source srcset="img/memes/6.webp" type="image/webp"><img src="img/memes/6.png" alt="Мем"></picture>
 						</li>
 						<li class="memes__item">
-							<picture><source srcset="img/memes/1.webp" type="image/webp"><img src="img/memes/1.png" alt="Мем"></picture>
+							<picture><source srcset="img/memes/7.webp" type="image/webp"><img src="img/memes/7.jpg" alt="Мем"></picture>
 						</li>
 						<li class="memes__item">
 							<picture><source srcset="img/memes/7.webp" type="image/webp"><img src="img/memes/7.png" alt="Мем"></picture>
@@ -258,19 +263,20 @@
 							</li>
 						</ul>
 					</div>
+					<picture><source srcset="img/str8/car.webp" type="image/webp"><img src="img/str8/car.png" class="contacts__car" alt="Машина"></picture>
+					<picture><source srcset="img/str8/bus.webp" type="image/webp"><img src="img/str8/bus.png" class="contacts__bus" alt="Остановка"></picture>
+					<picture><source srcset="img/str8/sit.webp" type="image/webp"><img src="img/str8/sit.png" class="contacts__sit" alt="Скамейка"></picture>
+					<picture><source srcset="img/str8/sky.webp" type="image/webp"><img src="img/str8/sky.png" class="contacts__sky" alt="Облака"></picture>
+					<picture><source srcset="img/str8/sky.webp" type="image/webp"><img src="img/str8/sky.png" class="contacts__sky2" alt="Облака"></picture>
+					<picture><source srcset="img/str5/grass.webp" type="image/webp"><img src="img/str5/grass.png" class="contacts__grass" alt="Трава"></picture>
+					<picture><source srcset="img/str5/grass.webp" type="image/webp"><img src="img/str5/grass.png" class="contacts__grass2" alt="Трава"></picture>
+					<picture><source srcset="img/str8/vishka.webp" type="image/webp"><img src="img/str8/vishka.png" class="contacts__vishka" alt="Вышка"></picture>
+					<picture><source srcset="img/str8/vishka.webp" type="image/webp"><img src="img/str8/vishka.png" class="contacts__vishka" alt="Вышка"></picture>
+					<img src="img/str8/heart.gif" class="contacts__heart" alt="ХП">
 				</div>
-				<picture><source srcset="img/str8/car.webp" type="image/webp"><img src="img/str8/car.png" class="contacts__car" alt="Машина"></picture>
-				<picture><source srcset="img/str8/bus.webp" type="image/webp"><img src="img/str8/bus.png" class="contacts__bus" alt="Остановка"></picture>
-				<picture><source srcset="img/str8/sit.webp" type="image/webp"><img src="img/str8/sit.png" class="contacts__sit" alt="Скамейка"></picture>
-				<picture><source srcset="img/str8/sky.webp" type="image/webp"><img src="img/str8/sky.png" class="contacts__sky" alt="Облака"></picture>
-				<picture><source srcset="img/str8/sky.webp" type="image/webp"><img src="img/str8/sky.png" class="contacts__sky2" alt="Облака"></picture>
-				<picture><source srcset="img/str5/grass.webp" type="image/webp"><img src="img/str5/grass.png" class="contacts__grass" alt="Трава"></picture>
-				<picture><source srcset="img/str5/grass.webp" type="image/webp"><img src="img/str5/grass.png" class="contacts__grass2" alt="Трава"></picture>
-				<picture><source srcset="img/str8/vishka.webp" type="image/webp"><img src="img/str8/vishka.png" class="contacts__vishka" alt="Вышка"></picture>
-				<picture><source srcset="img/str8/vishka.webp" type="image/webp"><img src="img/str8/vishka.png" class="contacts__vishka" alt="Вышка"></picture>
-				<picture><source srcset="img/str2/bg2.webp" type="image/webp"><img src="img/str2/bg2.png" class="contacts__bg" alt="Фон"></picture>
 				<picture><source srcset="img/str5/border.webp" type="image/webp"><img src="img/str5/border.png" class="contacts__border" alt="Ограда"></picture>
-				<img src="img/str8/heart.gif" class="contacts__heart" alt="ХП">
+				<picture><source srcset="img/str2/bg2.webp" type="image/webp"><img src="img/str2/bg2.png" class="contacts__bg" alt="Фон"></picture>
+
 			</section>
 		</main>
 		<footer class="footer">
@@ -278,7 +284,7 @@
 			</div>
 		</footer>
 	</div>
-	<script src="js/app.min.js?_v=20230307231132"></script>
+	<script src="js/app.min.js?_v=20230309214506"></script>
 </body>
 
 </html>
