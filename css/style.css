@@ -367,46 +367,10 @@ h6 {
 }
 
 .filosofy__arrow {
-  width: 20%;
+  width: 50%;
   position: absolute;
   left: -6.25rem;
   bottom: 6.25rem;
-  -webkit-animation: arrow 2s linear infinite 1s;
-          animation: arrow 2s linear infinite 1s;
-}
-
-@-webkit-keyframes arrow {
-  0% {
-    -webkit-transform: translate(0px, 0px);
-            transform: translate(0px, 0px);
-  }
-
-  50% {
-    -webkit-transform: translate(90px, -80px);
-            transform: translate(90px, -80px);
-  }
-
-  100% {
-    -webkit-transform: translate(0px, 0px);
-            transform: translate(0px, 0px);
-  }
-}
-
-@keyframes arrow {
-  0% {
-    -webkit-transform: translate(0px, 0px);
-            transform: translate(0px, 0px);
-  }
-
-  50% {
-    -webkit-transform: translate(90px, -80px);
-            transform: translate(90px, -80px);
-  }
-
-  100% {
-    -webkit-transform: translate(0px, 0px);
-            transform: translate(0px, 0px);
-  }
 }
 
 .menu {
