@@ -192,12 +192,12 @@ h6 {
   padding-right: 3.75rem;
 }
 
-.header__hearts {
+.header__hearts img {
   -o-object-fit: cover;
      object-fit: cover;
 }
 
-.header__battery {
+.header__battery img {
   -o-object-fit: cover;
      object-fit: cover;
 }
@@ -571,9 +571,10 @@ h6 {
 .case__arrow {
   pointer-events: auto;
   -webkit-box-flex: 0;
-      -ms-flex: 0 0 3rem;
-          flex: 0 0 3rem;
-  height: 3rem;
+      -ms-flex: 0 0 3.125rem;
+          flex: 0 0 3.125rem;
+  width: 3.125rem;
+  height: 3.125rem;
 }
 
 .case__arrow_next {
@@ -902,6 +903,8 @@ h6 {
   left: 0;
   height: 3.125rem;
   width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .services {
@@ -1257,6 +1260,8 @@ h6 {
   z-index: 2;
   width: 15rem;
   height: 4.6875rem;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .contacts__sky2 {
@@ -1266,6 +1271,8 @@ h6 {
   z-index: 2;
   width: 15rem;
   height: 4.6875rem;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .contacts__grass {
