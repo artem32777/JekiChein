@@ -177,6 +177,8 @@ h6 {
 .header__menu img {
   height: 3.75rem;
   width: 27.5rem;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .header__actions {
@@ -188,6 +190,16 @@ h6 {
           align-items: center;
   gap: 1.25rem;
   padding-right: 3.75rem;
+}
+
+.header__hearts {
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.header__battery {
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .main {
@@ -675,6 +687,8 @@ h6 {
           justify-content: space-between;
   pointer-events: none;
   width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .order__grass > div {
@@ -694,6 +708,16 @@ h6 {
           flex: 0 0 12.5rem;
   width: 200px;
   height: 3.6875rem;
+}
+
+.order__grass-left {
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.order__grass-right {
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .order__magazine {
@@ -907,6 +931,8 @@ h6 {
   left: 0;
   height: 3.125rem;
   width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .services__container {
@@ -981,6 +1007,8 @@ h6 {
   bottom: 3.125rem;
   right: -3.125rem;
   height: 4.375rem;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .services__fire {
@@ -1248,6 +1276,8 @@ h6 {
   width: 21.875rem;
   height: 7.625rem;
   z-index: 2;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .contacts__grass2 {
@@ -1258,6 +1288,8 @@ h6 {
   width: 21.875rem;
   height: 7.625rem;
   z-index: 2;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .contacts__vishka {
@@ -1287,6 +1319,8 @@ h6 {
   left: 0;
   height: 3.125rem;
   width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .contacts__heart {
